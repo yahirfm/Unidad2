@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{FF286F4D-5AE4-4570-BACB-BB94AEA93D7F}"
+	ProjectSection(SolutionItems) = preProject
+		Bienvenida.html = Bienvenida.html
+		Informacion.html = Informacion.html
+		Login.html = Login.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F335597-EF0B-4CB0-BBDC-B703F419C4A7}
+	EndGlobalSection
+EndGlobal

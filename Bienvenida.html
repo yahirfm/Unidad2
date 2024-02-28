@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Bienvenido</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .welcome-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #0a8cde;
+            color: #fff;
+            border: none;
+            border-radius: 16px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Bienvenido</h1>
+        <p id="username"></p>
+        <p id="password"></p>
+        <p>Gracias por iniciar sesión.</p>
+        <button onclick="next()">Siguiente</button>
+        <p></p>
+        <button onclick="exit()">Cerrar Sesión</button>
+    </div>
+
+    <script>
+        var username = localStorage.getItem('username');
+        var password = localStorage.getItem('password');
+
+        document.getElementById('username').textContent = "Usuario: " + username;
+        document.getElementById('password').textContent = "Contraseña: " + password;
+
+        function next() {
+            window.location.href = "Informacion.html";
+        }
+
+        function exit() {
+            localStorage.removeItem('username');
+            localStorage.removeItem('password');
+            window.location.href = "Login.html";
+        }
+    </script>
+</body>
+</html>
